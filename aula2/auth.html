@@ -1,0 +1,45 @@
+<a href="index.html">Voltar</a>
+<h2>Meu formulário</h2>
+<p>Preenche as informações abaixo</p>
+<form id="formRegister">
+    Nome: 
+    <input
+    id="iName" type="text" placeholder="Digite seu nome completo"/><br>
+    Email: <input id="iEmail" type="email" placeholder="Digite seu melhor email"/><br>
+    Senha: <input id="iPass" type="password" placeholder="Letra maiúscula e números"/><br>
+    Data de nascimento: <input id="iBirth" type="date" />
+    <button type="submit">Salvar</button>
+
+</form>
+
+<h2>Resposta</h2>
+
+<pre id="pResponse"></pre>
+
+
+<script>
+//document é a página toda
+//get = pegar, elemento =elemento  do html
+    var users = []
+    var formR = document.getElementById("formRegister");
+    formR.addEventListener("submit", (e)=>{
+        e.preventDefault(); //impede de atualizar a tela
+
+        let name = document.getElementById("iName").value;
+        let email = document.getElementById("iEmail").value;
+        let pass = document.getElementById("iPass").value;
+        let birth = document.getElementById("iBirth").value;
+       
+        const user = {//objeto anônimo, estrutura, json
+            nome: name,
+            email: email,
+            senha: pass,
+            nascimento: birth
+        }
+
+        users.push(user)
+
+        let response = document.getElementById("pResponse")
+        response.innerHTML = JSON.stringify(users, null, 4);
+    })
+</script>
