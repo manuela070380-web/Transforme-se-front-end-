@@ -15,23 +15,27 @@
     <body>
         <h3 id="acessou"></h3>
 
-       
-        <h2 class="py-2 ">Bem vindo</h2>
-        <p>Preenche as informações abaixo</p>
-        <form id="formRegister">
-            Nome:
-            <input id="iName" type="text" placeholder="Digite seu nome completo" /><br>
-            Email: <input id="iEmail" type="email" placeholder="Digite seu melhor email" /><br>
-            Senha: <input id="iPass" type="password" placeholder="Letra maiúscula e números" /><br>
-            Data de nascimento: <input id="iBirth" type="date" />
-            <button type="submit">Salvar</button>
+        <div class="h-full flex">
+            <div id="modalRegister" class="fixed p-5 bg-about round-lg shadow-md column hidden">
+                <h2 class="py-2 ">Bem vindo</h2>
+                <p>Preenche as informações abaixo</p>
+                <form id="formRegister">
+                    Nome:
+                    <input id="iName" type="text" placeholder="Digite seu nome completo" /><br>
+                    Email: <input id="iEmail" type="email" placeholder="Digite seu melhor email" /><br>
+                    Senha: <input id="iPass" type="password" placeholder="Letra maiúscula e números" /><br>
+                    Data de nascimento: <input id="iBirth" type="date" />
+                    <button type="submit">Salvar</button>
 
-        </form>
+                </form>
 
-        <h2 class="py-2 ">Resposta</h2>
-        <pre id="list"></pre>
+                <h2 class="py-2 ">Resposta</h2>
+                <pre id="list"></pre>
+            </div>
 
-
-        <script src="user.js"></script>
-
+            <a id="addUser" class="rouded-full bg-primary text-white px-4 py-3 fixed bottom-0 right-0"> + </a>
+            <script src="user.js"></script>
+            <script src=" painel.js"></script>
+            
+        </div>
     </body>

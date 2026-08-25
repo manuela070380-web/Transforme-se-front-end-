@@ -446,6 +446,17 @@ $text-alignments: (
     display: flex;
 }
 
+.flex {
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.hidden{
+    display: none;
+}
 
 /* =========================================================
    22. FLEX ALIGNMENT
