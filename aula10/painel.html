@@ -1,0 +1,63 @@
+<html>
+
+<heade>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+DE+SAS+Guides&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css" />
+
+    <body>
+        <h3 id="acessou"></h3>
+
+
+        <div id="modalRegister" class="fixed top-0 right-0 bottom-0
+             left-0 hidden items-center justify-center bg-black-50 g-50">
+
+            <div class="relative max-w-md w-full p-5 bg-about rounded-lg
+            shadow-md flex column">
+
+                <a id="btClose" class="bg-prices absolute top-0 right-0 px-2
+                    rounded-full cursor-pointer">
+                    x
+                </a>
+
+                <h2 class="py-2 ">Bem vindo</h2>
+                <p>Preenche as informações abaixo</p>
+                <form class="flex column">
+                    Nome:
+                    <input id="iName" type="text" placeholder="Digite seu nome completo" /><br>
+                    Email: <input id="iEmail" type="email" placeholder="Digite seu melhor email" /><br>
+                    Senha: <input id="iPass" type="password" placeholder="Letra maiúscula e números" /><br>
+                    Data de nascimento: <input id="iBirth" type="date" />
+                    <a id="formRegister"
+                        class="p-2 mr-5 px-4 bg-primary hover:shadow-inner text-white rounded text-white ml-auto shadow">Salvar</a>
+
+                </form>
+            </div>
+
+        </div>
+        <h2 class="py-2 ">Resposta</h2>
+        <pre id="list"></pre>
+
+        <table>
+            <thead>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </thead>
+            <tbody id="list"></tbody>  
+            </tbody>
+        </table>
+
+        <a id="addUser" class="bg-primary text-white px-4 py-3 fixed bottom-0 right-0 rounded-full"> + </a>
+        <script src="user.js"></script>
+        <script src=" painel.js"></script>
+
+
+    </body>
