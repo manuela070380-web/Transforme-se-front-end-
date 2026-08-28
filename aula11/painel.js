@@ -2,7 +2,7 @@ const btAddUser = document.getElementById("addUser");
 btAddUser?.addEventListener("click", (e) => {
     const modalRegister = document.getElementById("modalRegister");
     modalRegister.classList.remove("hidden");
-    modalRegister.classList.add("flex");
+    modalRegister.classList.add("flex")
 });
 
 const btClose = document.getElementById("btClose");
